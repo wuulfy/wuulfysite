@@ -1,0 +1,202 @@
+:root {
+	--pr: #572da3;
+	--gr: #2fd571;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+.fadeoff * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+body {
+	background-color:black;
+	scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.card h1 {
+  font-family:inter;
+  color: var(--gr);
+  line-height:0;
+  font-size:2vw;
+}
+
+span {
+  color: var(--gr);
+  font-family:inter;
+  font-size:1vw;
+  display:table; /* This + the margin centers span.*/
+  /*margin:auto;*/
+}
+
+span, h1 {
+
+}
+
+.nav {
+ background-color: #131313;
+ overflow:hidden;
+ padding:0.5vw;
+ list-style:none;
+ margin:0;
+ text-align:center;
+ height:1.5vw;
+ animation: navtrstn 0.4s ease-out;
+}
+
+@keyframes navtrstn {
+ from {filter:opacity(0%)}
+ to {filter:opacity(100%)}
+}
+
+.active {
+ text-decoration: underline;
+}
+
+.nav li {
+	display:inline-block;
+	vertical-align: middle;
+	padding-right:2vw;
+}
+
+.nav a {
+	display:inline-block;
+  font-family:inter;
+	padding: none;
+	margin: none;
+  font-weight: 600;
+  font-size:0.8vw;
+  text-decoration: none;
+  float:left;
+	color:gray;
+  transition:0.3s;
+}
+
+.nav a:hover {
+  color:#bbb;
+	padding-right:0.5vw;
+	padding-left:0.5vw;
+	filter:drop-shadow(0px 0px 0.5vw gray);
+}
+
+.logo { /*This just makes the size relative*/
+  width: 1.2vw;
+  transition: 0.3s
+}
+
+.tile {
+	transition:0.4s;
+	filter: brightness(52%);
+}
+
+.tile:hover {
+	filter: brightness(100%);
+	transition: 0.7s
+}
+
+.card img {
+	display:inline-block;
+	float: left;
+}
+
+.card {
+	margin: auto;
+  width: 30%;
+	background-color: #0e0e0e;
+	padding:0.7vw;
+	border-radius:1vw;
+	margin-bottom: 0vw;
+	animation: cardA 0.6s;
+}
+
+.cardlogo { /*relative size*/
+  width: 6.4vw;
+}
+
+.align1 {
+	display: table-cell;
+  vertical-align: middle;
+}
+
+.align2 {
+	display: table;
+  width: 100%;
+	position: relative;
+	top: 32vh;
+}
+
+@keyframes cardA { /*start transition*/
+  from {transform:scale(1.2,1.2); filter:opacity(0%) blur(0.4vw)}
+  to {transform:scale(1,1); filter:opacity(100%) blur(0vw)}
+}
+
+.text {
+	background-color: var(--gr);
+	background-image: linear-gradient(135deg, var(--gr), var(--pr));
+	display:inline-block;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+	vertical-align:middle;
+	margin-left: 1vw;
+	filter:drop-shadow(0px 0px 0.3vw black)
+}
+
+.darrow {
+	width: 2vw;
+	margin-top:20vw;
+	animation: arrow 1.8s;
+}
+
+@keyframes arrow {
+	0% {filter:opacity(0%)}
+	60% {filter:opacity(0%)}
+	100% {filter:opacity(100%)}
+}
+
+.wrap {
+		animation: up-down 1.4s infinite;
+		display: table;
+	  margin: 0 auto;
+}
+
+.wrap a {
+	filter:brightness(100%);
+	transition: 0.4s;
+}
+
+.wrap a:hover {
+	filter:brightness(150%);
+	transition: 0.4s;
+}
+
+@keyframes up-down {
+	0% {transform:translate(0vw, 0.4vw)}
+	50% {transform:translate(0vw, 0vw)}
+	100% {transform:translate(0vw, 0.4vw)}
+}
+
+.block h1 {
+	  font-size:2vw;
+}
+
+.block {
+	background-color: #000;
+	font-family:inter;
+  color: var(--gr);
+	background-color: white;
+	margin-top: 20vw;
+}
