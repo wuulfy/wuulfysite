@@ -1,6 +1,7 @@
 :root {
 	--pr: #572da3;
 	--gr: #2fd571;
+	--bg: #0b0b1a;
 }
 
 ::selection {
@@ -16,7 +17,7 @@
 }
 
 body {
-	background-color:black;
+	background-color:#0b0b1a;
 	scroll-behavior: smooth;
   padding: 0;
   margin: 0;
@@ -24,13 +25,6 @@ body {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-}
-
-.card h1 {
-  font-family:inter;
-  color: var(--gr);
-  line-height:0;
-  font-size:2vw;
 }
 
 span {
@@ -41,34 +35,29 @@ span {
   /*margin:auto;*/
 }
 
-span, h1 {
-
-}
-
 .nav {
- background-color: #131313;
+ background-color: #121229;
  overflow:hidden;
- padding:0.5vw;
  list-style:none;
  margin:0;
  text-align:center;
- height:1.5vw;
- animation: navtrstn 0.4s ease-out;
-}
-
-@keyframes navtrstn {
- from {filter:opacity(0%)}
- to {filter:opacity(100%)}
-}
-
-.active {
- text-decoration: underline;
 }
 
 .nav li {
 	display:inline-block;
 	vertical-align: middle;
-	padding-right:2vw;
+	padding-right:2vw;	
+	transition:0.2s;
+}
+
+.nav li:active {
+	animation: 0.4s navout infinite;
+}
+
+@keyframes navout {
+0% {transform:translate(0vw, 0vw)}
+50% {transform:translate(0vw,-0.3vw)}
+100% {transform:translate(0vw, 0vw)}
 }
 
 .nav a {
@@ -80,30 +69,28 @@ span, h1 {
   font-size:0.8vw;
   text-decoration: none;
   float:left;
-	color:gray;
+  color: #BFBFBF;
+  padding-top:0.5vw;
+  padding-bottom:0.5vw;
   transition:0.3s;
 }
 
 .nav a:hover {
-  color:#bbb;
+  color: white;
 	padding-right:0.5vw;
 	padding-left:0.5vw;
 	filter:drop-shadow(0px 0px 0.5vw gray);
 }
 
 .logo { /*This just makes the size relative*/
-  width: 1.2vw;
-  transition: 0.3s
+  width: 1.2vw;	
+  filter: brightness(80%);
+  transition: 0.3s;
 }
 
-.tile {
-	transition:0.4s;
-	filter: brightness(52%);
-}
-
-.tile:hover {
-	filter: brightness(100%);
-	transition: 0.7s
+.logo:hover {
+	filter: brightness(200%);
+	transition: 0.8s;
 }
 
 .card img {
@@ -113,33 +100,41 @@ span, h1 {
 
 .card {
 	margin: auto;
-  width: 30%;
-	background-color: #0e0e0e;
+    width: 34%;
+	background-color: #0f0f1f;
 	padding:0.7vw;
-	border-radius:1vw;
+	border-radius:1.3vw;
 	margin-bottom: 0vw;
+	filter: drop-shadow(0px 1vw 2vw rgba(0, 0, 0, 0.6));
 	animation: cardA 0.6s;
 }
 
+.card h1 {
+	font-family:inter;
+	color: var(--gr);
+	line-height:0;
+	font-size:2.3vw;
+  }
+
+.card span {
+ font-size:1.2vw;	
+} 
+  
+
 .cardlogo { /*relative size*/
-  width: 6.4vw;
+  width: 7.3vw;
 }
 
 .align1 {
-	display: table-cell;
-  vertical-align: middle;
-}
-
-.align2 {
 	display: table;
-  width: 100%;
+    width: 100%;
 	position: relative;
-	top: 32vh;
+	margin-top: 32vh;
 }
 
 @keyframes cardA { /*start transition*/
-  from {transform:scale(1.2,1.2); filter:opacity(0%) blur(0.4vw)}
-  to {transform:scale(1,1); filter:opacity(100%) blur(0vw)}
+  from {transform:scale(1.2,1.2); filter:opacity(0%) blur(0.2vw) drop-shadow(0px 1vw 2vw rgba(0, 0, 0, 0))}
+  to {transform:scale(1,1); filter:opacity(100%) blur(0vw) drop-shadow(0px 1vw 2vw rgba(0, 0, 0, 0.6))}
 }
 
 .text {
@@ -155,9 +150,35 @@ span, h1 {
 	filter:drop-shadow(0px 0px 0.3vw black)
 }
 
+.gradienttext h1 {
+	background-color: var(--gr);
+	text-align: center;
+	font-size:2.3vw;
+	margin:0;
+	background-image: linear-gradient(135deg, #000, #000, var(--gr), var(--pr), #000, #000);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+}
+
+.gradienttext p {
+	text-align: center;
+	font-size: 1.01vw;
+	margin-top:0.2vw;
+	background-color: var(--gr);
+	background-image: linear-gradient(135deg, #000, var(--gr), var(--pr), #000);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+}
+
 .darrow {
 	width: 2vw;
-	margin-top:20vw;
+	margin: auto;
+	margin-top:1.5vw;
+	padding:0.7vw;
 	animation: arrow 1.8s;
 }
 
@@ -170,7 +191,7 @@ span, h1 {
 .wrap {
 		animation: up-down 1.4s infinite;
 		display: table;
-	  margin: 0 auto;
+	    margin: 0 auto;
 }
 
 .wrap a {
@@ -189,14 +210,18 @@ span, h1 {
 	100% {transform:translate(0vw, 0.4vw)}
 }
 
-.block h1 {
-	  font-size:2vw;
+.block {
+	font-family:inter;
+    color: var(--gr);
+	background-color: #07070f;
+	padding:1vw;
+	margin-top: 16.6vw;
 }
 
-.block {
-	background-color: #000;
-	font-family:inter;
-  color: var(--gr);
-	background-color: white;
-	margin-top: 20vw;
+.h_iframe        {position:relative; background-color:white; margin:1.4vw;}
+.h_iframe .ratio {display:inline-block;width:25%;height:auto;}
+.h_iframe iframe {position:absolute;left:0;width:25%; height:100%;}
+
+.wrap2 {
+ height:100%;
 }
