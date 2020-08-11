@@ -16,6 +16,10 @@
   -o-transition: none !important;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
 	background-color:#0b0b1a;
   padding: 0;
