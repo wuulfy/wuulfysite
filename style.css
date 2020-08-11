@@ -218,7 +218,7 @@ span {
 	margin-top: 16.6vw;
 }
 
-.h_iframe        {position:relative; background-color:white; margin:1.4vw;}
+.h_iframe        {position:relative;margin:1.4vw;}
 .h_iframe .ratio {display:inline-block;width:25%;height:auto;}
 .h_iframe iframe {position:absolute;left:0;width:25%; height:100%;}
 
