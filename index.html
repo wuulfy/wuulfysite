@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800&amp;display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="logo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="">
@@ -18,15 +19,28 @@
     <meta property="og:url" content="https://wulfyy.com/index.html">
     <meta property="og:description" content="My name is wuulfy. I am a graphic designer and programmer. Visit my site to see my projects and portfolio!">
     <meta property="og:type" content="profile">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:image" content="https://wulfyy.com/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
     // Disable site fadein on load:
   	window.onload = function() {
     		document.querySelector('.fadeoff').classList.remove('fadeoff')	}
     </script>
+    <script>
+      // Back to top button
+      var btn = document.getElementById("totop");   
+
+      function topFunction() { //this part doesnt work yet.
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+    
 <body>
-<p style="color:rgba(255,255,255,0.4); font-family:inter; text-align:center; line-height:0; font-size:0.75vw">Warning: This website is in pre-release and may be heavily unpolished or broken. Go here to report bugs: <b><a style="color: rgba(255,255,255,0.4); text-decoration:none" href="https://github.com/wuulfy/wuulfy.github.io/issues">https://github.com/wuulfy/wuulfy.github.io/issues</a></b></p>
+<a href="#">
+<button onclick="topFunction()" id="totop" title="Scroll to the top of the page.">Back To Top</button>
+</a>
+<p class="toppiece">Warning: This website is in pre-release and may be heavily unpolished and/or broken. Go here to report bugs: <b><a style="color: rgba(255,255,255,0.4); text-decoration:none" href="https://github.com/wuulfy/wuulfy.github.io/issues">https://github.com/wuulfy/wuulfy.github.io/issues</a></b></p>
 <ul class="nav">
     <li><a href="index.html"><img class="logo" src="logoalt.png"></img></a>
     <li><a href="portfolio.html">Portfolio</a>
@@ -41,7 +55,7 @@
 <span>I'm a <b title="Graphic design is design that uses illustration, words and more to present something.">graphic designer</b> and a <b title="A programming front-end is the visual part of a code project.">front-end<br>programmer</b> from the UK. Take a look at my<br> portfolio for an impression of <b title="I can do alot :D">what I can do.</b></span>
 </div></div></div></div>
 <div class="wrap">
-<a href="#scroll1"><img class="darrow" src="darrow.png"></a>
+<a href="#scroll1"><img class="darrow" src="darrow.png"><!--might make button use js instead of html scroll--></a>
 </div>
 
 <div class="block">
@@ -49,14 +63,17 @@
 <h1>Take a look at what I do</h1>
 <p>I create motion graphics, websites and more. Here are some examples.</p> 
 </div>
+<div id="scroll1">
+<div class="fuckoff">
+  <div class="container">
+    <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe> 
+    <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe>
+    <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe>      
+</div></div>
+<div class="textrow">
+<h1 class="text" style="margin-top: 9px">Motion Graphics</h1>
+</div></div>
 
-<div class="wrap2" id="scroll1">
-  <div class="h_iframe">
-      <img class="ratio" src="http://placehold.it/16x9"/>
-      <iframe src="https://www.youtube.com/embed/QSCXxLURWek" frameborder="0" allowfullscreen></iframe>
-  </div>
-  </div>
-</div>
 </body>
 </head>
 </html>
