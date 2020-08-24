@@ -16,6 +16,7 @@
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
+  transition: none !important;
 }
 
 html {
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-	background-color; black;
+	background-color: black;
 	background: linear-gradient(45deg, var(--grd), var(--prd));
 	background-attachment: fixed;
 	background-position: center;
@@ -98,7 +99,6 @@ span {
 }
 
 .nav a {
-	display:inline-block;
   font-family:inter;
 	padding: none;
 	margin: none;
@@ -130,7 +130,6 @@ span {
 }
 
 .card img {
-	display:inline-block;
 	float: left;
 }
 
@@ -178,37 +177,38 @@ span {
 	background-color: var(--gr);
 	background-image: linear-gradient(135deg, var(--gr), var(--pr));
 	display:inline-block;
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- -moz-background-clip: text;
- -moz-text-fill-color: transparent;
+	background-clip: text;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
 	vertical-align:middle;
 	margin-left: 1vw;
-	filter:drop-shadow(0px 0px 0.3vw black)
+
 }
 
-.gradienttext h1 {
+.gradienttext {
 	background-color: var(--gr);
 	text-align: center;
-	font-size:2.3vw;
+	font-size:1.5vw;
 	margin:0;
-	background-image: linear-gradient(135deg, #000, #000, var(--gr), var(--pr), #000, #000);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- -moz-background-clip: text;
- -moz-text-fill-color: transparent;
+	padding-left:25vw;
+    padding-right:25vw;
+	background-image: linear-gradient(135deg, #000, var(--gr), var(--pr), #000);
+	background-clip: text;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
 }
 
 .gradienttext p {
-	text-align: center;
-	font-size: 1.01vw;
+	font-size: 1.2vw;
 	margin-top:0.2vw;
-	background-color: var(--gr);
-	background-image: linear-gradient(135deg, #000, var(--gr), var(--pr), #000);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- -moz-background-clip: text;
- -moz-text-fill-color: transparent;
+}
+
+.gradienttext h1 {
+	margin-bottom:0px;
 }
 
 .darrow	 {
@@ -253,9 +253,21 @@ span {
 .block {
 	font-family:inter;
     color: var(--gr);
-	background-color: rgba(7, 7, 15, 0.3);
-	padding:1vw;
+	background-color: rgba(2, 2, 5, 0.33);
+	padding:0.1vw;
+	padding-bottom:3vw;
+	margin: 0px;
 	margin-top: 32vh; /*this puts the div at (around) the browser bottom. not perfect but it works*/
+}
+
+#b1{
+	background-color: rgba(2, 2, 5, 0.6);
+	margin-top: 0px;
+}
+
+#b2{
+	background-color: rgba(0,0,0,0.85);
+	margin-top: 0px;
 }
 
 .container {
@@ -265,10 +277,14 @@ span {
 
 .c-iframe {
 	border:0;
+	border-radius:27px;
 	display:inline-block;	
-	padding-right:2vw;
-	padding-left:2vw;
-	transition:0.2s;
+	margin-right:2vw;
+	margin-left:2vw;
+}
+
+.mover {
+	padding-left:-10px;
 }
 
 .toppiece {
@@ -283,4 +299,51 @@ span {
 
 .textrow {
 	text-align:center;
+	margin:0px;
 } 
+
+#pad {
+	display:inline-block;
+	width:9rem;
+}
+
+#btn {
+	margin: 0 auto;
+	display: table;
+}
+
+.btnwrap button {
+	cursor: pointer;
+	text-decoration: none;
+	font-family: inter;
+	font-weight: 600;
+	font-size: 1.25vw;
+	padding: 0.75vw;
+	background-image: linear-gradient(135deg, var(--gr), var(--pr));
+	background-clip: text;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+   display: inline-block;
+	transition:0.3s ease-out;
+  }
+
+  .btnwrap button:hover {
+	background-image: linear-gradient(135deg, var(--gr), var(--pr));
+	padding:1vw;
+	transform:translate(0px,-0.2vw);
+	filter:drop-shadow(0px 0px 0.4vw black);
+	transition:0.3s ease-out;
+}
+  
+  .btngrad {
+	border: 0.3vw solid;
+	border-image-slice: 1; 
+	border-width: 0.3vw;
+  }
+
+  .btn {
+	border-image-source: linear-gradient(135deg, var(--gr), var(--pr));
+	transition:0.3s;
+  }
