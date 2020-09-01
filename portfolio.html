@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html class="fadeoff" lang="en" xml:lang="en">
+<!--https://www.youtube.com/watch?v=k85mRPqvMbE-->
 <head>
 <title>Home | wuulfy</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="p.css">
   <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800&amp;display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="JooshFX©.png"/>
+  <link rel="shortcut icon" href="logo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="">
@@ -14,30 +17,51 @@
     <meta content=#2fd571 name=theme-color>
     <meta property="og:title" content="wuulfy | programming and motion graphics">
     <meta property="og:site_name" content="">
-    <meta property="og:url" content="https://wuulfy.com/index.html">
+    <meta property="og:url" content="https://wulfyy.com/index.html">
     <meta property="og:description" content="My name is wuulfy. I am a graphic designer and programmer. Visit my site to see my projects and portfolio!">
     <meta property="og:type" content="profile">
-    <meta property="og:image" content="FAVICON">
+    <meta property="og:image" content="https://wulfyy.com/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
     // Disable site fadein on load:
   	window.onload = function() {
     		document.querySelector('.fadeoff').classList.remove('fadeoff')	}
     </script>
+    <script>
+      // Back to top button
+      var btn = document.getElementById("totop");   
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
 <body>
-
+<a href="#">
+<button onclick="topFunction()" id="totop" title="Scroll to the top of the page.">Back To Top</button>
+</a>
+<p class="toppiece">Warning: This website is in pre-release and may be heavily unpolished and/or broken. Go here to report bugs: <b><a style="color: rgba(255,255,255,0.4); text-decoration:none" href="https://github.com/wuulfy/wuulfy.github.io/issues">https://github.com/wuulfy/wuulfy.github.io/issues</a></b></p>
 <ul class="nav">
-    <li class="test"><a class="active" href="index.html"><img class="logo" src="logoalt.png"></img></a>
+    <li><a href="index.html"><img class="logo" src="logoalt.png"></img></a>
     <li><a href="portfolio.html">Portfolio</a>
     <li><a href="#1">Projects</a>
     <li><a href="#1">Contact</a>
 </ul>
-
-<div class="card">
-<h1>portfolio page.</h1>
-<span>this is the portfolio page. its not even started lmao</span>
 </div>
+<div class="gradienttext">
+  <h1>My Portfolio</h1>
+  <p>A splash of my work starting with motion graphics.</p>
+</div>
+<div class="mover">
+  <div class="container">
+    <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe> 
+    <iframe class="c-iframe" src="https://www.youtube.com/watch?v=rfz-UsiHmLI" allowfullscreen width="336px" height="189px"></iframe>
+    <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe>      
+</div></div>
 
+  <footer>
+    <h1 class="gradienttext">©wuulfy 2020</h1>
+  </footer>
+</div>
 </body>
 </head>
 </html>
