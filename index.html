@@ -3,7 +3,7 @@
 <!--https://www.youtube.com/watch?v=k85mRPqvMbE-->
 <head>
 <title>Home | wuulfy</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="h.css">
   <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800&amp;display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="logo.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,13 +29,11 @@
     <script>
       // Back to top button
       var btn = document.getElementById("totop");   
-
-      function topFunction() { //this part doesnt work yet.
+      function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-      </script>
-    
+      </script> 
 <body>
 <a href="#">
 <button onclick="topFunction()" id="totop" title="Scroll to the top of the page.">Back To Top</button>
@@ -57,7 +55,6 @@
 <div class="wrap">
 <a href="#scroll1"><img class="darrow" src="darrow.png"><!--might make button use js instead of html scroll--></a>
 </div>
-
 <div class="block">
   <div id="scroll1"></div>
 <div class="gradienttext">
@@ -104,8 +101,50 @@
 <div class="block" id="b2">
   <div class="gradienttext">
     <h1>About Me</h1>
-    <p style="font-weight: 500">I'm Wuulfy, a freelance, hobbyist motion designer and programmer. I mainly do what I do for the sake of fun and building up my skills along with being able to provide useful creations. Previously, I created introductory graphics for content creators. If you're here for that I recommend buying from one of my design partners:</p> 
+    <p style="font-weight: 500">I'm Wuulfy, a freelance, hobbyist motion designer and programmer. I mainly do what I do for the sake of fun, developing my skills and providing useful creations. I<br><br>Previously, I created introductory graphics for content creators. If you're here for that I recommend buying from one of these design partners:</p> 
     </div>
+<div class="iconrow" id="row">
+    <div class="contain">
+      <img src="curoa.jpg" class="image">
+      <a class="overlay" href="https://youtube.com/c/curoafx">
+        <div class="logotxt"><b>CuroaFX</b></div>
+      </a>
+    </div>
+    <div class="contain">
+      <img src="jooshfx.jpg" class="image">
+      <a class="overlay" href="https://www.youtube.com/c/jooshfx">
+        <div class="logotxt"><b>JooshFX</b></div>
+      </a>
+    </div>
+
+    <div class="contain">
+      <img src="wlroo.jpg" class="image">
+      <a class="overlay" href="https://www.youtube.com/c/wlroo">
+        <div class="logotxt" style="padding-left:6%;"><b>.wlroo</b></div>
+      </a>
+    </div>
+    <div class="contain">
+      <img src="glance.jpg" class="image">
+      <a class="overlay" href="https://www.youtube.com/channel/UC561cmADNCtUDcY7oREVz8w">
+        <div class="logotxt" style="margin-left:14%;"><b>GlanceArts</b></div>
+      </a>
+    </div>
+    <div class="contain">
+      <img src="sarjent.jpg" class="image">
+      <a class="overlay" href="https://www.youtube.com/channel/UCrIYogNXGAXPMUi9xWqdKyg">
+        <div class="logotxt" style="margin-left:16%;"><b>SarjentFX</b></div>
+      </a>
+    </div>
+    <div class="contain">
+      <img src="leaf.jpg" class="image">
+      <a class="overlay" href="https://www.youtube.com/channel/UCWWXdlZ92Tg_maMrpLnEtXw">
+        <div class="logotxt" style="margin-left:17.5%;"><b>leafshine</b></div>
+      </a>
+    </div>
+  </div>
+  <footer>
+    <h1 class="gradienttext">©wuulfy 2020</h1>
+  </footer>
 </div>
 </body>
 </head>
