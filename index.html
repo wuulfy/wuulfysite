@@ -4,6 +4,7 @@
 <head>
 <title>Home | wuulfy</title>
 <link rel="stylesheet" type="text/css" href="h.css">
+<link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800&amp;display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="logo.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,11 +40,14 @@
 <button onclick="topFunction()" id="totop" title="Scroll to the top of the page.">Back To Top</button>
 </a>
 <p class="toppiece">Warning: This website is in pre-release and may be heavily unpolished and/or broken. Go here to report bugs: <b><a style="color: rgba(255,255,255,0.4); text-decoration:none" href="https://github.com/wuulfy/wuulfy.github.io/issues">https://github.com/wuulfy/wuulfy.github.io/issues</a></b></p>
+<!--<ul class="media">
+  <li><a></a>
+</ul>-->
 <ul class="nav">
-    <li><a href="index.html"><img class="logo" src="logoalt.png"></img></a>
+    <li><a href="index.html" id="active"><img class="logo" src='logo.png' onmouseover="this.src='logoalt.png';" onmouseout="this.src='logo.png';""></img></a>
     <li><a href="portfolio.html">Portfolio</a>
-    <li><a href="#1">Projects</a>
-    <li><a href="#1">Contact</a>
+    <li><a href="projects.html">Projects</a>
+    <li><a href="contact.html">Contact</a>
 </ul>
 <div class="align1">
 <div class="card">
@@ -63,7 +67,7 @@
 </div>
 <div class="mover">
   <div class="container">
-    <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe> 
+    <iframe class="c-iframe" src="https://www.youtube.com/embed/7sxjfEyrMrY" allowfullscreen width="336px" height="189px"></iframe> 
     <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe>
     <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe>      
 </div></div>
@@ -85,9 +89,9 @@
     </div>
     <div class="mover">
       <div class="container">
-        <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe> 
-        <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe>
-        <iframe class="c-iframe" src="https://www.youtube.com/embed/QSCXxLURWek" allowfullscreen width="336px" height="189px"></iframe>      
+        <iframe class="c-iframe" style="overflow:hidden" scrolling="no" src="https://lh3.googleusercontent.com/fife/ABSRlIoBjO96kXJ81o8wBZ3JWI6TZFiVdFJHKzYOV1oKUs741ga9lbJxdGxg5lP63H3Aycl5DWDgez1lk1He4Tnxq9xi6gHjGV8N-TrXEzLyO8dgvZnNx1_MBiD9webhrjGJsiSZzDVmREtLycFugaj_Rp3A9QYyG--RzzmNwgbAoMxyyWZXHZhw-5cvptsf6ROZnPF0lH4DhuCvNOoBHrAecLsMpChn5TiGs6n9Di2GsiEaOCdnVQbeRu1VMXRBKCa4b-HA1xc0X_8PQIPIfRU6DZ3VkWRVzUDJjkr8k_viNm12I_PV7iZhH2ljcOvlN8HE53cQ0bcmC0vkVViCnvHwIh4zBUHRuL9QSVPfeI2HVeglfwSV-QYhvEcKtWwFaftpvaCmwFjJxlvTxJF0owyIg1pyjx8Fni_5tZaKTj_3IID6YflNPtnoLgw_qeekigMeAHaAECxfXtsThT3qFK-qiC_l3zWJRsvGNSSlC2jZ45GeULG46B_mOpVXQQ2577SzVfXX0sNsNP5pvs7U0K6A41unkswr0VOVhzJdwkVi3ti3awNgOXwculLPKb0asPe0MvPQlLA16BGstjrCHO0o0uTm6kENmk4DwBA_4deKGXBbQsJOXjfL_HpCAeoJswgjiY2t1zzDYKhYXcZSfaGXmyWeQ2VTl3RFsqICD9hH3D0MXDOLITpXzW8hHno9-H7flpHiikyWKm0QwFze2Sf9spuH3kXsyUfgqA=w1920-h952-ft" allowfullscreen width="336px" height="189px"></iframe> 
+        <iframe class="c-iframe" src="https://www.youtube.com/embed/0fMLDQsGvCY" allowfullscreen width="336px" height="189px"></iframe>
+        <iframe class="c-iframe" style="overflow:hidden" scrolling="no" src="https://lh3.googleusercontent.com/fife/ABSRlIr_i-bEbfZuQtSNO4rK_wD5oTS5tEm0klmaSyzM7gOSiGSIidrB0zU1Nflj2Rq9C6zMA9FR8nPi70k7KnaqJrzeVvCA4789jt16w9vPhENZ7n0MrZUNcn3o_iRcEnmnPI3EO9geR4WzBDdtgLqs_Yruv1HTwbVyBIZuYO7iFqgxszuTgzrbKOosrACDGX5x7STbR-iHSRUK3dntyFO1Hc6SikCy2tAA0zkspkQNf3LDt9ilmuWIyeEJEL2uqvz7c-6j_FMLOxGKrPQwVRpjTINgU6BnmRPRSkMIWeO92l-4bIMHnIjZao_4F1REF4K4VbyYT32VLaCIAyF1WkoVfjqThqxQkoOG7oCuKJ_Zgr3EuehRD-qQ-HTQ1TbH8FfYqunPnPQDx-zu53OfLkHeu6ngFFLvQhp1NC01727-LtfjgNQVz5img20vAx9TlpYIjQ8C7sag2z6WFkT6W4MsOZ_RtLxthjhFh8ciEsCMhZFx3guh3dql6rL8PiSwMzoaC_c1QyRsKI3QGMNQtA0LcAKQyNcYS9rka3zaJ4i1KiF47i-YL0URSQ6AXd0zL_Z8mbZRXcBgmErTJEKcnDnkgwkRNlXsz_Z7d6dffZV_nRX_m8X5SpMKnoivsHpxKIjmmEGy0TEgh7tqz7UmRntkJ5ttd4aaUPKLY4_xfIRSdTFhGkbHpWrrvAVxXF9Onye2m5fx7DSKSr2xJ2FarGWeaFKo7Nx7NNaNzg=w1920-h952-ft" allowfullscreen width="336px" height="189px"></iframe>      
     </div></div>
     <div class="textrow">
     <h1 class="text" style="font-size:2vw; font-weight: 500"> Wuulfy Site <div id="pad"></div>Wuulfy Motion Pack<div id="pad"></div>JooshFX Site</h1>
@@ -101,7 +105,7 @@
 <div class="block" id="b2">
   <div class="gradienttext">
     <h1>About Me</h1>
-    <p style="font-weight: 500">I'm Wuulfy, a freelance, hobbyist motion designer and programmer. I mainly do what I do for the sake of fun, developing my skills and providing useful creations. I<br><br>Previously, I created introductory graphics for content creators. If you're here for that I recommend buying from one of these design partners:</p> 
+    <p style="font-weight: 500">I'm Wuulfy, a freelance, hobbyist motion designer and programmer. I mainly do what I do for the sake of fun, developing my skills and providing useful creations.<br><br>Previously, I created introductory graphics for content creators. If you're here for that I recommend buying from one of these design partners:</p> 
     </div>
 <div class="iconrow" id="row">
     <div class="contain">

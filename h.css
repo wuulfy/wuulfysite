@@ -1,182 +1,3 @@
-:root {
-	--pr: #572da3;
-	--gr: #2fd571;
-	--prd: #1e0f38;
-	--grd: #0a2615;
-	--bg: #0b0b1a;
-}
-
-::selection {
-  color: black;
-  background: white;
-}
-
- ::-webkit-scrollbar {
-	width: 12.2px;
-  }
-
-  ::-webkit-scrollbar-track {
-	border-radius: 100px;
-	background:#cecece
-  }
-  
-  ::-webkit-scrollbar-thumb {
-	background: #7e8182;
-	border-radius: 100px;
-	border: solid #cecece 3px
-  } 
-
-  ::-webkit-scrollbar-thumb:hover {
-	background: #565b5c;
-  } 
-  ::-webkit-scrollbar-thumb:active {
-	background: linear-gradient(0deg, var(--gr), var(--pr));
-  } 
-
-.fadeoff * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-body {
-	background-color: black;
-	background: linear-gradient(45deg, var(--grd), var(--prd));
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    padding: 0;
-    margin: 0;
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-}
-
-#totop {
-	display: block;
-	position: fixed;
-	bottom: 1.5vw;
-	right: 1.5vw;
-	z-index: 100;
-	font-size: 1vw;
-	border: none;
-	outline: none;
-	background-color: rgba(255 ,255 ,255 , 0.1);
-	color: white;
-	cursor: pointer;
-	padding: 0.5vw;
-	border-radius: 0.6vw;
-	filter:drop-shadow(0px 0px 0.3vw black);
-	transition:0.3s;
-	animation: arrow 2s
-  }
-  
-  #totop:hover {
-	background-color: rgba(255 ,255 ,255 , 0.12);
-	filter:drop-shadow(0px 0px 0.1vw rgba(255 ,255 ,255 , 0.5));
-	transition:0.3s;
-  }
-
-span {
-  color: var(--gr);
-  font-family:inter;
-  font-size:1vw;
-  display:table;
-  /*margin:auto;*/
-}
-
-.nav {
- background-color: rgba(0, 0, 0, 0.2);
- overflow:hidden;
- list-style:none;
- margin:0;
- padding:0;
- text-align:center;
- filter:drop-shadow(0px 0.5vw 0.4vw black);
-}
-
-.nav li {
-	display:inline-block;
-	vertical-align: middle;
-	padding-right:2vw;	
-	transition:0.2s;
-}
-
-.nav li:active {
-	animation: 0.4s navout infinite;
-}
-
-@keyframes navout {
-0% {transform:translate(0vw, 0vw)}
-50% {transform:translate(0vw,-0.3vw)}
-100% {transform:translate(0vw, 0vw)}
-}
-
-.nav a {
-  font-family:inter;
-  padding: none;
-  margin: none;
-  font-weight: 600;
-  font-size:0.9vw;
-  text-decoration: none;
-  float:left;
-  color: #BFBFBF;
-  padding-top:0.4vw;
-  padding-bottom:0.4vw;
-  filter:drop-shadow(0px 0px 0.8vw rgba(255,255,255, 0));
-  transition:0.3s;
-}
-
-.nav a:hover {
-  color: white;
-	filter:drop-shadow(0px 0px 0.8vw white);
-}
-
-.logo { /*This just makes the size relative*/
-  width: 1.3vw;	
-  filter: brightness(80%);
-  transition: 0.3s;
-}
-
-.logo:hover {
-	filter: brightness(200%);
-	transition: 0.8s;
-}
-
-.gradienttext {
-	background-color: var(--gr);
-	text-align: center;
-	font-size:1.5vw;
-	margin:0;
-	padding-left:25vw;
-    padding-right:25vw;
-	background-image: linear-gradient(45deg, #000, var(--gr), var(--pr), #000);
-	background-clip: text;
-   -webkit-background-clip: text;
-   -moz-background-clip: text;
-   -ms-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   -moz-text-fill-color: transparent;
-   -ms-background-clip: text;
-}
-
-.gradienttext p {
-	font-size: 1.2vw;
-	margin-top:0.2vw;
-}
-
-.gradienttext h1 {
-	margin-bottom:0px;
-}
-
 .darrow	 {
 	width: 2vw;
 	margin: auto;
@@ -288,50 +109,6 @@ span {
 	width:9rem;
 }
 
-#btn {
-	margin: 0 auto;
-	display: table;
-}
-
-.btnwrap button {
-	cursor: pointer;
-	text-decoration: none;
-	font-family: inter;
-	font-weight: 600;
-	font-size: 1.25vw;
-	padding: 0.75vw;
-	background-image: linear-gradient(45deg, var(--gr), var(--pr));
-	background-clip: text;
-   -webkit-background-clip: text;
-   -moz-background-clip: text;
-   -ms-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   -moz-text-fill-color: transparent;
-   -ms-background-clip: text;
-   display: inline-block;
-	transition:0.3s ease-out;
-  }
-
-   .btnwrap {
-	   transition:0.3s;
-   }
-
-  .btnwrap:hover {
-	transform:scale(1.1,1.1);
-	filter: brightness(125%) drop-shadow(0px 0px 0.4vw black);
-}
-
-  .btngrad {
-	border: 0.3vw solid;
-	border-image-slice: 1; 
-	border-width: 0.3vw;
-  }
-
-  .btn {
-	border-image-source: linear-gradient(45deg, var(--gr), var(--pr));
-	transition:0.3s;
-  }
-
   .contain {
 	position: relative;
 	width: 7%;
@@ -387,11 +164,6 @@ span {
   .iconrow {
 	display:initial;
   }
-  
-  #row {
-	  margin-left:25%;
-	  margin-right:25%;
-  }
 
   .card img {
 	float: left;
@@ -403,13 +175,13 @@ span {
 	background-color: rgba(0 , 0, 0, 0.11) /*rgba(15, 15, 31, 0.2);*/;
 	padding:0.7vw;
 	margin-bottom: 0vw;
-	filter: drop-shadow(0px 1vw 1.2vw rgba(0, 0, 0, 1));
+	border-radius:1.2vw;
 	animation: cardA 0.7s;
 }
 
 @keyframes cardA { /*start transition*/
-	from {transform:scale(1.1,1.1) translate(0vw, -2vw); opacity:0; filter:drop-shadow(0px 1vw 1vw rgba(0, 0, 0, 0))}
-	to {transform:scale(1,1); opacity:1; filter:drop-shadow(0px 1vw 1.2vw rgba(0, 0, 0, 1))}
+	from {transform:scale(1.1,1.1) translate(0vw, -2vw); opacity:0;}
+	to {transform:scale(1,1); opacity:1;}
   }  
 
 .card h1 {
@@ -425,23 +197,4 @@ span {
 
 .cardlogo { /*relative size*/
   width: 9vw;
-}
-
-.align1 {
-	display: table;
-    width: 100%;
-	position: relative;
-	margin-top: 32vh;
-}
-
-footer {
-	background-color:#111;
-	padding-top:0.5vw;
-	padding-bottom:0.5vw;
-	margin-top:3vw;
-}
-
-footer .gradienttext {
-	margin: 0 auto;	
-	font-size:1.25vw;
 }
