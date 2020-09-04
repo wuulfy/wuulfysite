@@ -171,7 +171,7 @@
 
 .card {
 	margin: auto;
-    width: 41%;
+    width: 41vw;
 	background-color: rgba(0 , 0, 0, 0.11) /*rgba(15, 15, 31, 0.2);*/;
 	padding:0.7vw;
 	margin-bottom: 0vw;
