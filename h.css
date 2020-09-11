@@ -1,9 +1,8 @@
 .darrow	 {
 	width: 2vw;
 	margin: auto;
-	margin-top:1.5vw;
-	padding:0.7vw;
 	opacity: 0.9;
+	border: none;
 	outline: none;
 	animation: arrow 1.8s;
 }
@@ -17,15 +16,22 @@
 .wrap {
 		animation: up-down 1.4s infinite;
 		display: table;
-	    margin: 0 auto;
+		margin: 0 auto;
+		border: none;
+		outline: none;
+		padding-top:2vw;
 }
 
-.wrap a {
+.wrap button {
 	filter:brightness(100%);
+	cursor:pointer;
+	border: none;
+	outline:none;
+	background:none;
 	transition: 0.4s;
 }
 
-.wrap a:hover {
+.wrap button:hover {
 	filter:brightness(150%) saturate(120%);
 	opacity:1;
 	transition: 0.4s;
@@ -44,11 +50,11 @@
 	padding:0.1vw;
 	padding-bottom:3vw;
 	margin: 0px;
-	margin-top: 32vh; /*this puts the div at (around) the browser bottom. not perfect but it works*/
+	margin-top: 32vh; /*this pu	ts the div at (around) the browser bottom. not perfect but it works for the most part*/
 }
 
 #b1{
-	background-color: rgba(2, 2, 5, 0.55);
+	background-color: rgba(2, 2, 5, 0.65);
 	margin-top: 0px;
 }
 
@@ -197,4 +203,28 @@
 
 .cardlogo { /*relative size*/
   width: 9vw;
+}
+
+.textsplode {
+	line-height:0;
+	font-weight:700;
+}
+
+.textsplode .txtspld1 {
+	color:rgba(255,255,255,0.5);
+}
+
+.textsplode .txtspld2 {
+	color:rgba(255,255,255,0.7);
+}
+
+.txtspld1 {
+	margin-left:29vw;
+	font-size:1.3vw;
+}
+
+.txtspld2 {
+	text-align:right;
+	margin-right:30vw;
+	font-size:1.6vw;
 }

@@ -36,10 +36,8 @@
         document.documentElement.scrollTop = 0;
       }
       </script> 
-<body class="mzscroll">
-<a href="#">
+<body>
 <button onclick="topFunction()" id="totop" title="Scroll to the top of the page.">Back To Top</button>
-</a>
 <ul class="media">
   <li><a href="yt.html"><i class="fab fa-youtube"></i></a>
   <li><a href="discord.html"><i class="fab fa-discord"></i></a>
@@ -50,7 +48,7 @@
     <li><a href="index.html" id="active"><img class="logo" src='logo.png' onmouseover="this.src='logoalt.png';" onmouseout="this.src='logo.png';""></img></a>
     <li><a href="portfolio.html">Portfolio</a>
     <li><a href="projects.html">Projects</a>
-    <li><a href="contact.html">Contact</a>
+    <li><a href="info.html">Information</a>
 </ul>
 <div class="align1">
 <div class="card">
@@ -60,13 +58,19 @@
 <span>I'm a <b title="Graphic design is design that uses illustration, words and more to present something.">graphic designer</b> and a <b title="A programming front-end is the visual part of a code project.">front-end<br>programmer</b> from the UK. Take a look at my<br> portfolio for an impression of <b title="I can do alot :D">what I can do.</b></span>
 </div></div></div></div>
 <div class="wrap">
-<a href="#scroll1"><img class="darrow" src="darrow.png"><!--might make button use js instead of html scroll--></a>
+<button onclick="oneS()"><img class="darrow" src="darrow.png"></button>
 </div>
+<script>
+  function oneS() {
+  var elmnt = document.getElementById("scroll1");
+  elmnt.scrollIntoView();
+}
+</script>
 <div class="block">
   <div id="scroll1"></div>
 <div class="gradienttext">
 <h1>Have a Look</h1>
-<p style="font-weight: 500">I create motion graphics, websites and more with passion. Here are some examples.</p> 
+<p style="font-weight: 500">I create <b>motion graphics</b>,<b>websites</b> and <b>more</b> with passion. Here are some examples.</p> 
 </div>
 <div class="mover">
   <div class="container">
@@ -88,7 +92,7 @@
 <div class="block" id="b1">
   <div class="gradienttext">
     <h1>My Projects</h1>
-    <p style="font-weight: 500">I've created numerous projects for graphic design, tools and more. I'm an advocate for <b title="Open-source code is completely available to the public for adaptations and more">open-source code</b>; use and fork my code as you want under Creative Commons Attribution 4. Have a look at some of the things I've created.</p> 
+    <p style="font-weight: 500">I've created numerous projects for graphic design, tools and more. I'm an advocate for <b title="Open-source code is completely available to the public for adaptations and more">open-source code</b>; use and fork my code as you want under <b>Creative Commons Attribution 4</b>. Have a look at some of the things I've created.</p> 
     </div>
     <div class="mover">
       <div class="container">
@@ -108,7 +112,17 @@
 <div class="block" id="b2">
   <div class="gradienttext">
     <h1>About Me</h1>
-    <p style="font-weight: 500">I'm Wuulfy, a freelance, hobbyist motion designer and programmer. I mainly do what I do for the sake of fun, developing my skills and providing useful creations.<br><br>Previously, I created introductory graphics for content creators. If you're here for that I recommend buying from one of these design partners:</p> 
+    <p style="font-weight: 500">I'm Wuulfy, hobbyist motion/graphic designer with use of <b>Photoshop, After Effects and more</b> along with being a programmer in <b>HTML, CSS </b>and<b> JavaScript</b>. I mainly do all of this for the sake of fun, developing my skills and providing useful creations that people can <b>easily use, learn from</b> and <b>fork from</b>.</p>
+    <h1>Highly Rated</h1>
+    <p>The majority of my critics and clients find what I do <b>high quality</b> and <b>professional</b>. Here are some people's opinions of me:</p>
+  </div>
+    <div class="textsplode">
+     <p class="txtspld1">"Dude that looks soo sick!" - Kian</p>
+     <p class="txtspld2">"I absolutely love it" - Placeholder</p>
+    </div>
+  <div class="gradienttext">
+    <h1>Extra</h1>
+      <p>This area is relatively unnecessary but I feel like it deserves to be here. I used to make intros for content creators. If you're after that, try my partners:</p> 
     </div>
 <div class="iconrow" id="row">
     <div class="contain">

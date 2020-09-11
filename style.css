@@ -3,12 +3,12 @@
 	--gr: #2fd571;
 	--prd: #1e0f38;
 	--grd: #0a2615;
-	--bg: #0b0b1a;
+	--bg: #16162d;
 }
 
 ::selection {
-  color: black;
-  background: white;
+  color: white;
+  background: black;
 }
 
  ::-webkit-scrollbar {
@@ -16,21 +16,22 @@
   }
 
   ::-webkit-scrollbar-track {
-	border-radius: 100px;
-	background:#cecece
+	border-radius: 0px;
+	background:#000000
   }
   
   ::-webkit-scrollbar-thumb {
-	background: #7e8182;
+	background: #33333d;
 	border-radius: 100px;
-	border: solid #cecece 3px
+	border: solid #000000 2px;
   } 
 
   ::-webkit-scrollbar-thumb:hover {
-	background: #565b5c;
+	background: #454545;
+	
   } 
   ::-webkit-scrollbar-thumb:active {
-	background: linear-gradient(0deg, var(--gr), var(--pr));
+	background: #66666F;
   } 
 
 .fadeoff * {
@@ -44,7 +45,7 @@
 html {
 	scroll-behavior: smooth;
 	overflow-x:hidden;
-	scrollbar-color: #7e8182 #cecece;
+	scrollbar-color: #33333d #000000; /*this is for firefox because its not webkit*/
 	scrollbar-width: auto;
 }
 
@@ -89,7 +90,7 @@ body {
 
 span {
   color: var(--gr);
-  font-family:inter;
+  font-family:Inter, Helvetica, Arial;
   font-size:1vw;
   display:table;
 }
@@ -97,9 +98,9 @@ span {
 .media {
 	display: block;
 	position: absolute;
-	top: 0.4vw;
+	top: 0.1vw;
 	right: 0vw;
-	font-size: 1vw;
+	font-size: 1.2vw;
 	text-decoration:none;
 }
 
@@ -150,11 +151,11 @@ span {
 }
 
 .nav a {
-  font-family:inter;
+  font-family:Inter, Helvetica, Arial;
   padding: none;
   margin: none;
   font-weight: 600;
-  font-size:0.9vw;
+  font-size:1.05vw;
   text-decoration: none;
   float:left;
   color: #BFBFBF;
@@ -187,7 +188,7 @@ span {
 }
 
 .gradienttext {
-	font-family:inter;
+	font-family: Inter, Helvetica, Arial;
 	background-color: var(--gr);
 	text-align: center;
 	font-size:1.5vw;
@@ -238,7 +239,7 @@ span {
 .toppiece {
 	color:rgba(255, 255, 255, 0.4); 
 	margin:0px;
-	font-family:inter; 
+	font-family:Inter, Helvetica, Arial;
 	text-align:center; 
 	line-height:1.8; 
 	font-size:0.75vw;
@@ -278,7 +279,7 @@ span {
 .btnwrap button {
 	cursor: pointer;
 	text-decoration: none;
-	font-family: inter;
+	font-family:Inter, Helvetica, Arial;
 	font-weight: 600;
 	font-size: 1.25vw;
 	padding: 0.75vw;

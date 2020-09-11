@@ -2,8 +2,10 @@
     display:inline-table;
     background-color:rgba(0,0,0,0.2);
     border-radius:20px;
+    margin-left:3px;
+    margin-right:3px;
     padding-top:20px;
-    width:0px;
+    width:0.1mm;
 }
 
 #c1 {
