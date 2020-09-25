@@ -1,5 +1,5 @@
 :root {
-	--pr: #572da3;
+	--pr: #6c35d1;
 	--gr: #2fd571;
 	--prd: #1e0f38;
 	--grd: #0a2615;
@@ -65,6 +65,7 @@ body {
 }
 
 #totop {
+	font-family:Inter, Helvetica, Arial;
 	display: block;
 	position: fixed;
 	bottom: 1.5vw;
@@ -98,7 +99,7 @@ span {
 .media {
 	display: block;
 	position: absolute;
-	top: 0.1vw;
+	top: 0;
 	right: 0vw;
 	font-size: 1.2vw;
 	text-decoration:none;
@@ -109,7 +110,7 @@ span {
 	vertical-align: middle;
 	padding-right:0.7vw;
 	margin-bottom:0.3vw;
-	margin-top:0.3vw;
+	margin-top:-1.6vw;
 	transition:0.2s cubic-bezier(0,0,.2,1)
 }
 
@@ -219,7 +220,12 @@ span {
 	display: table;
 }
 
+iframe {
+	overflow:none;
+}
+
 .c-iframe {
+	overflow:none;
 	border:0;
 	border-radius:20px;
 	display:inline-block;	
@@ -230,16 +236,6 @@ span {
 
 .mover {
 	padding-left:-10px;
-}
-
-.toppiece {
-	color:rgba(255, 255, 255, 0.4); 
-	margin:0px;
-	font-family:Inter, Helvetica, Arial;
-	text-align:center; 
-	line-height:1.8; 
-	font-size:0.75vw;
-	background-color:black;
 }
 
 .textrow {
@@ -348,11 +344,6 @@ span {
   .iconrow {
 	display:initial;
   }
-  
-  #row {
-	  margin-left:25%;
-	  margin-right:25%;
-  }
 
 .align1 {
 	display: table;
@@ -371,4 +362,118 @@ footer {
 footer .gradienttext {
 	margin: 0 auto;	
 	font-size:1.25vw;
+}
+
+@media screen and (orientation: portrait) {
+
+.nav {
+	background-color: rgba(0, 0, 0, 0.2);
+	overflow:hidden;
+	list-style:none;
+	margin:0;
+	padding:0.3vh;
+	text-align:left;
+	padding-left:1.5vh;
+   }
+   
+ .nav li {
+   display:inline-block;
+   vertical-align: middle;
+   padding-right:2vh;	
+  }
+   
+ .nav a:active {
+   transform:scale(0.85,0.85);
+ }
+   
+
+
+.nav a {
+   font-size:2.3vh;
+   padding-top:1.4vh;
+   padding-bottom:1.2vh;
+   filter:drop-shadow(0px 0px 0px rgba(255,255,255, 0));
+}
+
+   .nav a:active {
+	   transform:translate(0px,0vh) scale(0.8,0.8)
+   }
+
+	 .gradienttext {
+		font-size:2.6vh;
+		padding-left:7vh;
+		padding-right:7vh;
+		background-image: linear-gradient(45deg, var(--gr), var(--pr));
+	}
+	
+	.gradienttext p {
+		font-size: 2vh;
+		margin-top:0.2vh;
+	}
+
+	#totop {
+		bottom: 4.5vh;
+		left:0px;
+		margin: 0 auto;
+        display:table;
+		text-align:center;
+		font-size: 2.5vh;
+		padding: 1.5vh;
+		border-radius: 99vh;
+        background-color: rgba(200 ,255 ,220 , 0.25);
+		transition:0.3s;
+	  }
+
+	#totop:hover {
+		filter:none;
+		background-color: rgba(200 ,255 ,220 , 0.25);
+	  }
+
+	#totop:active {
+		transform:scale(0.9,0.9);
+		background-color: rgba(255 ,255 ,255 , 0.2);
+	}
+
+	.logo { /*This just makes the size relative*/
+		width: 3vh;	
+	  }
+
+	.media {
+		display: block;
+		position: absolute;
+		top: -0.2vh;
+		right: 0vh;
+		font-size: 2.3vh;
+		text-decoration:none;
+	}
+	
+	.media li {
+		display:inline-block;
+		vertical-align: middle;
+		padding-right:1vh;
+		margin-bottom:0.3vh;
+		transition:0.2s cubic-bezier(0,0,.2,1)
+	}
+	
+	.btnwrap button {
+		font-size: 2.5vh;
+		padding: 1vh;
+	  }
+
+	  .btngrad {
+		border-width: 0.6vh;
+	  }
+	
+
+	footer {
+		background-color:rgba(0,0,0,0.3);
+		padding-top:0.5vw;
+		padding-bottom:0.5vw;
+		margin-top:3vw;
+	}
+	
+	footer .gradienttext {
+		margin: 0 auto;	
+		font-size:3vh;
+	}
 }

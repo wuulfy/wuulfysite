@@ -1,4 +1,5 @@
 .wrpframe {
+    overflow: hidden;
     display:inline-table;
     background-color:rgba(0,0,0,0.2);
     border-radius:20px;
@@ -45,9 +46,20 @@ animation: c1 1s cubic-bezier(.02,.32,0,1);
     width:90%;
 }
 
+iframe {
+    overflow: hidden;
+}
+
 .c-iframe {
+    overflow: hidden;
     margin-right:20px;
     margin-left:20px;
+}
+
+#padder {
+   width:332px;
+   height:190px;
+   border-radius:0px;   
 }
 
 .btn {
@@ -73,3 +85,18 @@ animation: c1 1s cubic-bezier(.02,.32,0,1);
     margin:none;
     display:inline-block;
   }
+
+  @media screen and (orientation: portrait) {
+
+  .mover {
+      padding: 0px;
+      width:0.1mm;
+      margin: 0 auto;
+      display: table;
+      padding-bottom:11vh;
+  }
+
+  .wrpframe {
+   margin-top:2vh;
+}
+}

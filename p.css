@@ -49,3 +49,45 @@ animation: c1 1s cubic-bezier(.02,.32,0,1);
     margin-right:20px;
     margin-left:20px;
 }
+
+@media screen and (orientation: portrait) {
+    
+    .wrpframe {
+        border-radius:4vh;
+        margin-left:3px;
+        width:100%;
+        margin-right:3px;
+        padding-top:20px;
+    }
+
+    .container {
+        margin:0;
+        width:100%
+    }
+
+    .container .gradienttext h1 {
+        width:100%;
+        font-size:5.5vh;
+        text-align:center;
+        margin:0
+    }
+    
+    .container .gradienttext p {
+        font-size:3vh;
+        text-align:center;
+    }
+    
+    .container .gradienttext {
+        margin-top:0;
+    }
+    
+    .c-iframe {
+        margin-left:17%;
+        width:65%;
+        height:1
+    }
+
+    .wrpframe {
+        margin-bottom:1vh;  
+    }
+}

@@ -12,6 +12,7 @@
 
 .scroller a {
     text-decoration: none;
+    cursor:pointer;
 }
 
 .wrapz {
@@ -200,4 +201,52 @@ footer {
 
 #test {
     color:red;
+}
+
+#bound {
+    padding:1.2vw; 
+    margin-top:-0.8vw;
+}
+
+@media screen and (orientation: portrait) {
+    .wrapz {
+        font-size: 2.5vh;
+    }
+
+    .scroller {
+        line-height:3vh;
+    }
+
+  .cntr {
+     width:100%;
+     position: absolute;
+     top: 40%;
+     margin-top: -9%;
+  }
+
+  .mediarow {
+    margin-top:-0.5vh;
+    margin-bottom:2vh;
+    text-align:center;
+    font-size: 4vh;
+	text-decoration:none;
+}
+
+.fonty img {
+    width:23vh;
+}
+
+#bound {
+    padding:0px;
+    font-size:4vh;
+    margin-top:0.8vh;
+    margin-bottom:0.8vh;
+}
+
+.cola {
+    font-size:2.5vh;
+    padding:0.5vh;
+    border-radius:1.5vh;
+    margin:0.3vh;
+    padding-top:6.5vh;
 }

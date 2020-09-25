@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html class="fadeoff" lang="en" xml:lang="en">
 <!--https://www.youtube.com/watch?v=k85mRPqvMbE-->
 <head>
@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="i.css">
   <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800&amp;display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="logo.png"/>
+  <link rel="shortcut icon" href="/logos/logo.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://wulfyy.com/index.html">
     <meta property="og:description" content="My name is wuulfy. I am a graphic designer and programmer. Visit my site to see my projects and portfolio!">
     <meta property="og:type" content="profile">
-    <meta property="og:image" content="https://wulfyy.com/logo.png">
+    <meta property="og:image" content="https://wulfyy.com/logos/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
@@ -28,29 +28,40 @@
   	window.onload = function() {
     		document.querySelector('.fadeoff').classList.remove('fadeoff')	}
     </script>
-    <script>
-      // Back to top button
-      var btn = document.getElementById("totop");   
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
-<body>
-<a href="#">
-<button onclick="topFunction()" id="totop" title="Scroll to the top of the page.">Back To Top</button>
-</a>
+     <script>
+      function twoS() {
+      var elmnt = document.getElementById("topy");
+      elmnt.scrollIntoView();
+    }
+
+    function threeS() {
+    var elmnt = document.getElementById("threeS");
+    elmnt.scrollIntoView();
+  }
+  
+  function fourS() {
+  var elmnt = document.getElementById("fourS");
+  elmnt.scrollIntoView();
+}
+
+  function fiveS() {
+  var elmnt = document.getElementById("fiveS");
+  elmnt.scrollIntoView();
+}
+</script>
+
+<body id="topy">
+  <button onclick="twoS()" id="totop" title="Scroll to the top of the page.">Back To Top</button>
 <ul class="media">
     <li><a href="yt.html"><i class="fab fa-youtube"></i></a>
     <li><a href="discord.html"><i class="fab fa-discord"></i></a>
     <li><a href="twitter.html"><i class="fab fa-twitter"></i></a>
   </ul>
-<p class="toppiece"><b>Warning</b>: This website is in BETA and may be heavily unpolished and/or broken. Go here to report bugs: <b><a style="color: rgba(255,255,255,0.4); text-decoration:none" href="https://github.com/wuulfy/wuulfy.github.io/issues">https://github.com/wuulfy/wuulfy.github.io/issues</a></b></p>
 <ul class="nav">
-    <li><a href="index.html"><img class="logo" src="logoalt.png"></img></a>
+    <li><a href="index.html"><img class="logo" src="logos/logoalt.png"></img></a>
     <li><a href="portfolio.html">Portfolio</a>
     <li><a href="projects.html">Projects</a>
-    <li><a href="info.html">Information</a>
+    <li><a href="info.html" id="active">Info</a>
 </ul>
 </div>
 <div class="cntr">
@@ -59,9 +70,9 @@
   <p>Information about TOS and more. Contents:</p>
 </div>
 <div class="scroller">
-  <div class="wrapz"><a href="#s1">Contact Me</a></div><br>
-  <div class="wrapz"><a href="#s2">Branding</a></div><br>
-  <div class="wrapz"><a href="#s3">Legal and Extra</a></div>
+  <div class="wrapz"><a onclick="threeS()">Contact Me</a></div><br>
+  <div class="wrapz"><a onclick="fourS()">Branding</a></div><br>
+  <div class="wrapz"><a onclick="fiveS()" id="threeS">Legal and Extra</a></div>
   </div></div>
 <div class="block">
  <div class="gradienttext">
@@ -71,7 +82,7 @@
  <ul class="mediarow">
   <li title="wuulfy#3418"><a href="discord.html"><i class="fab fa-discord"></i></a>
   <li title="@fx_wulf"><a href="twitter.html"><i class="fab fa-twitter"></i></a>
-  <li title="wulffxissue@gmail.com"><a href="mailto:wulffxissue@gmail.com"><i class="fas fa-envelope"></i></a>
+  <li title="wulffxissue@gmail.com"><a href="mailto:wulffxissue@gmail.com"><i class="fas fa-envelope" id="fourS"></i></a>
 </ul>
 <div id="b1">
 <div class="gradienttext">
@@ -80,14 +91,14 @@
   <strong"><p style="padding:1vw;">Common Fonts:</p>
   </div>
   <div class="fonty">
-    <a href="https://www.dafontfree.io/gilroy-font-family/"><img src="gilroy.png"><br>
-    <a href="https://www.fontsquirrel.com/fonts/montserrat"><img src="montserrat.png"><br>
-    <a href="https://rsms.me/inter/"><img src="inter.png"><br>
-    <a href="https://befonts.com/product-sans-font.html"><img src="prodsans.png"><br>
+    <a href="https://www.dafontfree.io/gilroy-font-family/"><img src="miscimages/gilroy.png"><br>
+    <a href="https://www.fontsquirrel.com/fonts/montserrat"><img src="miscimages/montserrat.png"><br>
+    <a href="https://rsms.me/inter/"><img src="miscimages/inter.png"><br>
+    <a href="https://befonts.com/product-sans-font.html"><img src="miscimages/prodsans.png"><br>
     </div><br>
     <div class="gradienttext">
-      <a href="https://drive.google.com/drive/folders/1ORaT56ZK-k5UIjcQLA6G3K99HwDQu8V2?usp=sharing" class="logosh">Logo + Vector<img src="logo.png"></a>
-      <h1 style="padding:1.2vw; margin-top:-0.8vw;">My Colour Palette:</h1>
+      <a href="https://drive.google.com/drive/folders/1ORaT56ZK-k5UIjcQLA6G3K99HwDQu8V2?usp=sharing" class="logosh">Logo + Vector<img src="/logos/logo.png"></a>
+      <h1 id="bound">My Colour Palette:</h1>
     </div>
       <div class="palette">
         <h1 class="cola" id="bdrop1">Emermint!<br><div id="p1">#2fd571</div></h1>
@@ -99,7 +110,7 @@
       These names originate from combinations of colours. Emermint being a combo of emerald and mint, lilaviolet being a combo of lilac and violet and nightplum being a combo of the night and plums!
     </p></div>
 <div id="b2">
-  <div class="gradienttext">
+  <div class="gradienttext" id="fiveS">
  <h1>Legality</h1>
  <p>All my public work (except clients) is under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0.</a></p> 
  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0; padding:0.5vw;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/>
