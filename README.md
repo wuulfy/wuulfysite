@@ -1,4 +1,4 @@
-# wuulfy.github.io at wulfyy.com
+# wuulfy.github.io at wuulfy.com
 
 This is my personal design website. You are perfectly allowed to use my code to find out how to do something in my website or to look for issues
 that you can provide a fix for.
